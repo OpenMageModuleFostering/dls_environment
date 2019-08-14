@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DLS_Utility>
+            <version>1.0.0</version>
+        </DLS_Utility>
+    </modules>
+
+    <global>
+        <models>
+            <dls_utility>
+                <class>DLS_Utility_Model</class>
+            </dls_utility>
+        </models>
+    
+        <helpers>
+            <dls_utility>
+                <class>DLS_Utility_Helper</class>
+            </dls_utility>
+        </helpers>
+    
+        <blocks>
+            <dls_utility>
+                <class>DLS_Utility_Block</class>
+            </dls_utility>
+        </blocks>
+    </global>
+</config>

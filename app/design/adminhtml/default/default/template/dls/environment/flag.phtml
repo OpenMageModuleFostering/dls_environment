@@ -1,0 +1,18 @@
+<?php
+/**
+ * @class DLS_Environment_Block_Adminhtml_Flag
+ */
+    $dls_website_url = $this->getDLSWebsiteUrl();
+    $dls_logo_src_url = $this->getDLSLogoSrcUrl();
+?>
+
+<span id="dls_environment_flag" class="dlsenv-header-flag" style="display:none;">
+    <span id="dls_environment_flag_label"></span>
+    <a href="<?php echo $dls_website_url ?>">
+        <img class="dlsenv-header-brand-logo" src="<?php echo $dls_logo_src_url ?>" height="10" width="37">
+    </a>
+</span>
+
+<script type="text/javascript">
+    DLSEnvironmentObjectFlagsObject = new DLSEnvironmentObjectFlags();
+</script>

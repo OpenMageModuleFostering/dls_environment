@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+    <name>DLS_Environment</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Environment Flag clearly displays your current Magento admin environment to prevent data errors.</summary>
+    <description>Features:&#xD;
+- Set the URL used for each of your environments&#xD;
+- Flag will show at the top of the Magento Admin screen clearly indicating with text and color which environment you're working in&#xD;
+- Header bar which displays when scrolled down on an admin page will display styling that matches the environment flag color</description>
+    <notes>Features:&#xD;
+- Set the URL used for each of your environments&#xD;
+- Flag will show at the top of the Magento Admin screen clearly indicating with text and color which environment you're working in&#xD;
+- Header bar which displays when scrolled down on an admin page will display styling that matches the environment flag color</notes>
+    <authors><author><name>Tim Dolloff</name><user>DLSStudios</user><email>marketing@dlsstudios.com</email></author></authors>
+    <date>2015-03-17</date>
+    <time>22:18:56</time>
+    <contents><target name="magecommunity"><dir name="DLS"><dir name="Base"><dir name="Helper"><file name="Data.php" hash="6930b52dce1a150e88921968b5cce622"/><file name="Logo.php" hash="5670ab26ae12a63d4d93e29eccd2ae22"/></dir><dir name="etc"><file name="config.xml" hash="31918105362860bbc9535cfd8146d464"/><file name="system.xml" hash="b78db49a0450f9f1ff2d9956e3802791"/></dir></dir><dir name="Environment"><dir name="Block"><dir name="Adminhtml"><file name="Base.php" hash="82a0a738ed696629fd13ba775d25000d"/><file name="Flag.php" hash="d7ab28b8c0452f0620e3d22ca9a01739"/></dir></dir><dir name="Helper"><file name="Data.php" hash="5ee398f9506390d4ac3abc9cacba6be2"/></dir><dir name="Model"><file name="Settings.php" hash="91141fb20729837be3d9198ec88bb6c6"/></dir><dir name="etc"><file name="config.xml" hash="d1e8f8a8bcf9f6b885ec95933d8019ba"/><file name="system.xml" hash="aabe089a8f2f46f54b4c857e32dc505f"/></dir></dir><dir name="Utility"><dir name="Helper"><file name="Color.php" hash="3a34299f12286057b56a6f064236d0ed"/><file name="Data.php" hash="44d274748c28eb422741cf6d90e1ab61"/></dir><dir name="etc"><file name="config.xml" hash="11cbd3cda3d8d0eb3a0227d846d23e0e"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="dls"><file name="base.xml" hash="fb4da29270e20737e6e1eb31b16e7c92"/><dir name="environment"><file name="flag.xml" hash="72c7f56d51d5d31fe395c1ff1cd5b0de"/></dir><file name="environment.xml" hash="5e5d6cdead083cf3ae88faffeb0dcf6f"/></dir></dir><dir name="template"><dir name="dls"><dir name="environment"><file name="flag.phtml" hash="f5b700625341794849622bc87e92d605"/></dir><file name="environment.phtml" hash="e2d7defc684f63179be58afe7d204226"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DLS_Base.xml" hash="5fc8fcb0cf944476a890c507c9fd3334"/><file name="DLS_Environment.xml" hash="90c642031b6ba2ba2dbb0ef99b231d94"/><file name="DLS_Utility.xml" hash="c3b736611ad4248767c8c8f68782c913"/></dir></target><target name="mageweb"><dir name="js"><dir name="dls"><dir name="environment"><file name="flag.js" hash="9844c0a4e8b46b5a8acdb115bbda3efe"/></dir><file name="environment.js" hash="a3e61fb8246d3db4226afa1b17a038c1"/></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="base"><dir name="default"><dir name="dls"><file name="base.css" hash="de3d3a6b93c170974f9b735c67ac0ca9"/><dir name="environment"><file name="flag.css" hash="c9b42c2b208aced990008edaa8153193"/><dir name="images"><file name="environment_flag.png" hash="7f0d3d7ce7af42063acd80611487beea"/></dir></dir><dir name="images"><file name="dls_logo.png" hash="46f5012411de43d68bbe0cb37de61b47"/></dir></dir><dir name="images"><dir name="dls"><dir name="logo"><file name="dls_logo.png" hash="88666b3f2ad27f60830d6585de961c25"/><file name="dls_logo_black.png" hash="b77eee1964fbfbbcf1ded6ce4286798a"/><file name="dls_logo_white.png" hash="cbdb9b775cd9c2e68bfc6eb63e57d790"/><file name="three_dots_logo.png" hash="50ea9ca48e8c96f2d91ffdfc80805f6f"/><file name="three_dots_logo_black.png" hash="0ab30ce681b75ea61cfdaa09ad9bfff2"/><file name="three_dots_logo_white.png" hash="bc9a34507e036f34c8e9ce0dadfdfd7a"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.13</min><max>5.5.22</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.5</min><max>1.9</max></package></required></dependencies>
+</package>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>dls/environment/flag.js</script></action>
+            <action method="addCss"><script>dls/environment/flag.css</script></action>
+        </reference>
+
+        <reference name="header">
+            <block type="dls_environment/adminhtml_flag" name="dls_environment_flag" template="dls/environment/flag.phtml" output="toHtml" />
+        </reference>
+    </default>
+</layout>

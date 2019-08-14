@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>dls/environment.js</script></action>
+        </reference>
+
+        <reference name="before_body_end">
+            <block type="dls_environment/adminhtml_base" name="dls_environment" template="dls/environment.phtml" />
+        </reference>
+    </default>
+</layout>

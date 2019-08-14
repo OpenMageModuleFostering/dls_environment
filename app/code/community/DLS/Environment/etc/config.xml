@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DLS_Environment>
+            <version>1.0.0</version>
+        </DLS_Environment>
+    </modules>
+
+    <global>
+        <blocks>
+            <dls_environment>
+                <class>DLS_Environment_Block</class>
+            </dls_environment>
+        </blocks>
+
+        <helpers>
+            <dls_environment>
+                <class>DLS_Environment_Helper</class>
+            </dls_environment>
+        </helpers>
+
+        <models>
+            <dls_environment>
+                <class>DLS_Environment_Model</class>
+            </dls_environment>
+        </models>
+    </global>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <dls_environment>
+                    <file>dls/environment.xml</file>
+                </dls_environment>
+                <dls_environment_flag>
+                    <file>dls/environment/flag.xml</file>
+                </dls_environment_flag>
+            </updates>
+        </layout>
+
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <environment_flag>
+                                            <title>DLS Environment Flag</title>
+                                        </environment_flag>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+    <default>
+        <environment_flag>
+            <environment_settings>
+                <local>
+                    <name>local</name>
+                    <background_color>#ffffff</background_color>
+                    <color>#003d3f</color>
+                </local>
+                <dev>
+                    <name>dev</name>
+                    <background_color>#85c300</background_color>
+                    <color>#ffffff</color>
+                </dev>
+                <stage>
+                    <name>staging</name>
+                    <background_color>#0000FF</background_color>
+                    <color>#FFFFFF</color>
+                </stage>
+                <live>
+                    <name>live</name>
+                    <background_color>#FF0000</background_color>
+                    <color>#ffffff</color>
+                </live>
+                <other>
+                    <name>other</name>
+                    <background_color>#4E3E07</background_color>
+                    <color>#ffffff</color>
+                </other>
+            </environment_settings>
+        </environment_flag>
+    </default>
+</config>

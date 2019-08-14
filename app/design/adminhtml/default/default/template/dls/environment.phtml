@@ -1,0 +1,7 @@
+<?php
+    $dls_current_environment_config_json = $this->getCurrentEnvironmentConfigDataJson();
+?>
+
+<script type="text/javascript">
+    DLSEnvironmentObject = new DLSEnvironment('<?php echo $dls_current_environment_config_json; ?>');
+</script>

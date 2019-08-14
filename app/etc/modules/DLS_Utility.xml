@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DLS_Utility>
+            <active>true</active>
+            <codePool>community</codePool>
+        </DLS_Utility>
+    </modules>
+</config>

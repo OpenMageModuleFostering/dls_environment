@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DLS_Environment>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Core />
+                <Mage_Admin />
+                <Mage_Adminhtml />
+                <DLS_Base />
+                <DLS_Utility/>
+            </depends>
+        </DLS_Environment>
+    </modules>
+</config>

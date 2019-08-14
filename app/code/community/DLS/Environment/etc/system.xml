@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <environment_flag translate="label" module="dls_environment">
+            <label>Environment Flag</label>
+            <class>dls-environment-flag-block</class>
+            <tab>dls_extensions</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>50</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <environment_settings translate="label">
+                    <label>Environment Configuration Settings</label>
+                    <expanded>1</expanded>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <comment><![CDATA[<h3>The settings below depend on your value entered for System -> Configuration -> Web -> Secure -> Use Secure URLs in Admin<br>
+                        If the value is <font style="color:blue">No</font>, then enter the EXACT value in System -> Configuration -> Web -> <font style="color:blue">Unsecure</font> -> Base URL<br>
+                        If the value is <font style="color:red">Yes</font>, then enter the EXACT value in System -> Configuration -> Web -> <font style="color:red">Secure</font> -> Base URL</h3>]]>
+                    </comment>
+                    <fields>
+                        <!-- Local Environment Settings -->
+                        <local_heading translate="label">
+                            <label><![CDATA[<h3>Local Environment</h3>]]></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </local_heading>
+                        <local_base_url translate="label">
+                            <label>Local Environment Base Url</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-url</validate>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enter the Base Url for the admin panel on your local environments here</comment>
+                        </local_base_url>
+                        <!-- Development Environment Settings -->
+                        <dev_heading translate="label">
+                            <label><![CDATA[<h3>Dev Environment</h3>]]></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </dev_heading>
+                        <dev_base_url translate="label">
+                            <label>Dev Environment Base Url</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-url</validate>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enter the Base Url for the admin panel on your dev environment here</comment>
+                        </dev_base_url>
+                        <!-- Staging Environment Settings -->
+                        <stage_heading translate="label">
+                            <label><![CDATA[<h3>Staging Environment</h3>]]></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </stage_heading>
+                        <stage_base_url translate="label">
+                            <label>Staging Environment Base Url</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-url</validate>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enter the Base Url for the admin panel on your staging environment here</comment>
+                        </stage_base_url>
+                        <!-- Live Environment Settings -->
+                        <live_heading translate="label">
+                            <label><![CDATA[<h3>Live Environment</h3>]]></label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </live_heading>
+                        <live_base_url translate="label">
+                            <label>Live Environment Base Url</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-url</validate>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Enter the Base Url for the admin panel on your live environment here</comment>
+                        </live_base_url>
+                    </fields>
+                </environment_settings>
+            </groups>
+        </environment_flag>
+    </sections>
+</config>
