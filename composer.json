@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/DLS_Environment",
+    "name": "OpenMageModuleFostering\/DLS_Environment",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Environment Flag clearly displays your current Magento admin environment to prevent data errors.",
     "authors": [
-    {
-        "name": "Tim Dolloff",
-        "email": "marketing@dlsstudios.com"
-    }
-],
+        {
+            "name": "Tim Dolloff",
+            "email": "marketing@dlsstudios.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
