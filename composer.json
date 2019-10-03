@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/DLS_Environment",
+    "name": "openmage-module-fostering\/dls_environment",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Environment Flag clearly displays your current Magento admin environment to prevent data errors.",
     "authors": [
